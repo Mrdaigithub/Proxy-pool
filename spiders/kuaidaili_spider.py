@@ -26,7 +26,6 @@ def get_page_data(page_num):
         'accept-Encoding': 'gzip, deflate',
         'accept-Language': 'zh-CN,zh;q=0.8'
     }
-    r = 'cao'
     try:
         r = requests.get('%s/%s' % (base_url, page_num), headers=headers,
                          proxies={'http': 'http://120.26.199.103:8118'})
